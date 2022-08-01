@@ -1,0 +1,1089 @@
+@font-face {font-family: Anime-ace;src: url(fonts/Anime-ace/animeace.ttf);}
+@font-face {font-family: Anime-ace-b;src: url(fonts/Anime-ace/animeace_b.ttf);}
+@font-face {font-family: Anime-ace-i;src: url(fonts/Anime-ace/animeace_i.ttf);}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Anime-ace;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-size: 10px;
+}
+
+/* Generic CSS */
+.hidden {
+  display: none !important;
+}
+
+.column-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.6;
+  transition: 500ms ease-in-out;
+  height: 100%;
+}
+
+.column-title:hover {
+  opacity: 1;
+}
+
+.section-hide {
+  width: 0 !important;
+  border: 0 !important;
+}
+
+/* Main Container CSS*/
+#main-container {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+/* LOADING SCREEN CSS */
+#loader-container {
+  background: linear-gradient(#2b549c, #f5ce65, #ee975d, #a73529, #2d4a33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ }
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader img {
+   position:absolute;
+   height: 100px;
+   width: 80px;
+   transition: 1s;
+}
+
+/*==========Section Container Start==========*/
+/* Home Container CSS*/
+#home-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('assets/home-img/manga.jpg');
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  opacity: .9;
+  height: 100%;
+  width: 100%;
+  border: 20px solid black;
+  color: black;
+  font-family: Archivo-Bold;
+}
+
+#home {
+  background-color: rgb(155, 155, 155);
+  padding: 20px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#home-container #home h2 {
+  font-size: 12px;
+  margin: 1px;
+}
+
+#home-container #home .name {
+  font-size: 16px;
+}
+
+#home-container #home p.welcome {
+  font-size: 40px;
+}
+
+.scroll {
+  width: 80px;
+  height: 80px;
+}
+
+/* Content Grid CSS */
+main#content-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* About Me CSS */
+.about {
+  height: 100%;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+.about .column-title img {
+  position: relative;
+  max-height: 470px;
+  max-width: 160px;
+}
+
+.about .column-title h3 {
+  position: relative;
+  bottom: -20px;
+}
+
+.about .column-content {
+  height: 100%;
+  background: linear-gradient(#94a5ac, #91819b);
+  position: relative;
+}
+
+.about .column-content .about-img-bg1 {
+  position: relative;
+  left: -20px;
+  bottom: 0px;
+  width: 300px;
+  height: 170px;
+}
+
+.about .column-content .about-img-bg2 {
+  position:absolute;
+  top:0;
+  width: 300px;
+  height: 170px;
+}
+
+.about .column-content .about-img-bg3 {
+  position:absolute;
+  top:0;
+  right: -50px;
+  width: 300px;
+  height: 170px;
+  opacity: 0.7;
+}
+
+.about .column-content h4 {
+  position:relative;
+  z-index: 10;
+  font-size: 14px;
+  padding: 14rem 3rem 10px 3rem;
+  line-height: 15px;
+}
+
+.about .column-content h5 {
+  font-size: 12px;
+  margin: 0 4rem 3rem 3rem;
+}
+
+.about .personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px 0 155px;
+}
+
+.about .job {
+  margin: 0 50px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.about .personal-info p {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0px 0px 0px 50px;
+  line-height: 15px;
+  width: 60%;
+}
+
+.about .icon .fa {
+  font-size: 12px;
+  margin: 1px;
+}
+
+/* Skills CSS */
+.my-skill {
+  background-color: white;
+  overflow: hidden;
+}
+
+.my-skill .column-content {
+  position: relative;
+  padding: 20px 50px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#fbcb65, #6696b1 , #688da5);
+}
+
+.my-skill .column-content .skill-img-bg {
+  position: absolute;
+  margin-left: -150px;
+  bottom: 0px;
+}
+
+.my-skill .column-content .skill-img-bg-add1 {
+  position: absolute;
+  left: -10px;
+  padding: 90px 0;
+}
+
+.my-skill .column-content .skill-img-bg-add2 {
+  position: absolute;
+  right: -10px;
+  padding: 80px 0;
+}
+
+.my-skill .column-title img {
+  position: relative;
+  left: 10px;
+  max-height: 410px;
+  max-width: 310px;
+}
+
+.my-skill .column-title h3 {
+  position: relative;
+  bottom: -32px;
+}
+
+/* Skill Set Percentage */
+.my-skill .skills h4 {
+  margin-bottom:30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.my-skill .column-content .skills {
+  max-width: 100%;
+  margin-top: 160px;
+}
+
+.my-skill .column-content .skills .skill-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.my-skill .column-content .skills .skill-item h5 {
+  line-height: 20px;
+  font-size: 13px;
+  color: black;
+}
+
+.my-skill .column-content .skills .skill-item .progress {
+  background-color: rgb(134, 131, 131);
+  height: 10px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.my-skill .column-content .skills .skill-item {
+  margin-bottom: 25px;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in.html {
+  width: 90%;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in.css {
+  width: 85%;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in.js {
+  width: 50%;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in.c {
+  width: 50%;
+}
+
+.my-skill .column-content .skills .skill-item .progress .progress-in.hardware {
+  width: 90%;
+}
+
+.my-skill .column-content .skills .skill-item .skill-percent {
+  position: absolute;
+  right: 0;
+  color: black;
+  top: -25px;
+  font-weight: 400;
+  line-height:20px;
+}
+
+/* Services CSS */
+.services {
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.services .column-title img {
+  position: relative;
+  left: -40px;
+  max-height: 430px;
+  max-width: 230px;
+}
+
+.services .column-title h3 {
+  position: relative;
+  bottom: -37px;
+}
+
+.services .column-content {
+  width: 100%;
+  height: 100%;
+  padding: 130px 0px;
+  background: linear-gradient(#4dad7c, #a47d54 , #ac2d20);
+}
+
+.services .column-content .service-img-bg {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+}
+
+.services .column-content .service-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services .column-content .service-content-item .service-item {
+  margin: 0 50px;
+}
+
+.services .column-content .service-content-item h3 {
+  font-size: 22px;
+  padding: 30px 0;
+}
+
+.services .column-content .service-content-item h4 {
+  font-size: 14px;
+}
+
+.services .column-content .service-content-item p {
+  font-size: 10px;
+  margin: 8px 0;
+}
+
+/* Portfolio CSS */
+.portfolio {
+  background-color: white;
+  overflow: hidden;
+}
+
+.portfolio .column-title img {
+  position: relative;
+  max-height: 420px;
+  max-width: 250px;
+}
+
+.portfolio .column-title h3 {
+  position: relative;
+  bottom: -39px;
+}
+
+.portfolio .column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(#8e4829, #f5da69 , #f8f28a, #f9ff73);
+}
+
+.portfolio .column-content h4 {
+  margin-top: 170px;
+  font-size: 30px;
+}
+
+.portfolio .column-content .portfolio-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: -50px;
+}
+
+.portfolio .column-content .portfolio-img-bg {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+}
+
+.portfolio .column-content .portfolio-image .portfolio-item {
+  padding: 10px;
+  flex: 0 50%;
+}
+
+.portfolio .column-content .portfolio-item img{
+  height: 100%;
+  width: 100%;
+  opacity: .85;
+  box-shadow: 0 10px 6px -6px #888888;
+}
+
+/* Contact CSS */
+.contact {
+  background-color: white;
+  overflow: hidden;
+}
+
+.contact .column-title img {
+  position: relative;
+  height: 440px;
+  max-height: 480px;
+  max-width: 200px;
+}
+
+.contact .column-title h3 {
+  position: relative;
+  bottom: -17px;
+}
+
+#content-container section span img {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+/* Contact Me */
+.contact .column-content {
+  position: relative;
+  background: linear-gradient(#2d4c6a, #485945, #af9e8b);
+}
+
+.contact .column-content .contact-img-bg {
+  width: 100%;
+  bottom: 0;
+}
+
+.contact .column-content .contact-img-bg-add1 {
+  position: absolute;
+  top:0;
+  left: -50px;
+  height: 150px;
+}
+
+.contact .column-content .contact-img-bg-add2{
+  position: absolute;
+  top:0;
+  left: 40%;
+  height: 150px;
+}
+
+.contact .column-content .contact-img-bg-add3{
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 150px;
+}
+
+.column-content .column-content-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  height: 40%;
+  width: 100%;
+}
+
+.contact .column-content .contact-info-item {
+  flex: 100%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact .column-content .contact-info-item .icon {
+  display: inline-block;
+}
+.contact .column-content .contact-info-item .icon .fa {
+  font-size: 25px;
+  color: black;
+}
+
+.contact .column-content .contact-info-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .column-content .contact-info-item p {
+  font-size: 16px;
+  line-height: 25px;
+  color: black;
+  font-weight: 400;
+}
+
+.contact .column-content .contact-form .form-item {
+  margin-bottom: 25px;
+}
+
+.contact .column-content .contact-form .form-item .form-control {
+  max-width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px 25px;
+  font-size: 12px;
+  color: var(--text-black-700);
+  transition: all 0.3s ease;
+}
+
+.contact .column-content .contact-form .form-item .form-control:focus {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .column-content .contact-form .form-item textarea.form-control {
+  height: 60px;
+}
+
+.contact .column-content .contact-form .btn {
+  height: 20px;
+  margin: 0 40px;
+  padding: 5px 10px 20px 10px;
+}
+
+/* Background Colors */
+.about .column-title:hover {
+  background: linear-gradient( #5f667e, #2b549c,#922c0b, #f1931e);
+}
+
+.my-skill .column-title:hover {
+  background: linear-gradient(#f5ce65,#f5ce65, #a73529);
+}
+
+.services .column-title:hover {
+  background: linear-gradient(#672728,#ee975d);
+}
+
+.portfolio .column-title:hover{
+  background: linear-gradient(#b31a39, #f4d668, #ca8749, #523934);
+}
+
+.contact .column-title:hover {
+  background: linear-gradient(#b4a98a, #91684b, #2d4a33);
+}
+
+.column-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#94a5ac, #91819b) !important;
+}
+
+/*==========Section Container End==========*/
+
+/*==========Tools Start===========*/
+/* Page Switcher */
+.page-switcher {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  z-index: 101;
+}
+
+.page-switcher .home-switch {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+}
+
+.page-switcher img {
+  display: inline-block;
+  height: 40px;
+  margin: 0 2px;
+}
+
+.page-switcher > img {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+/* Dynamic CSS */
+section.wide {
+  width: 40% !important;
+}
+
+section.full-width {
+  width: 100% !important;
+}
+
+section.narrow {
+  width: 15%;
+}
+
+section {
+  width: 20%;
+  height: 100%;
+  transition: 0.5s ease;
+  border-right: 1px solid black;
+}
+
+/*  Media Query */
+@media only screen and (max-width: 360px) {
+  .about .column-content .about-img-bg1 {
+    bottom: -60px;
+  }
+  .services .column-content .service-img-bg {
+    bottom: -65px;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: -85px;
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .about .column-content h4 {
+    padding: 13rem 3rem 10px 3rem;
+  }
+  .my-skill .column-content .skills {
+    margin-top: 120px;
+  }
+  .services .column-content {
+    padding: 0px 0px;
+  }
+  .services .column-content .service-img-bg {
+    max-height: 100%;
+    max-width: 100%;
+    bottom: -22px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 110px 0 50px 0;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 100px;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: -55px;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .about .column-content h4 {
+    padding: 19rem 3rem 10px 3rem;
+  }
+  .my-skill .column-content .skills {
+    margin-top: 220px;
+  }
+  .services .column-content .service-img-bg {
+    bottom: -110px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 170px 0 50px 0;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 170px;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  .about .column-content .about-img-bg1 {
+    bottom: -100px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 210px 0 50px 0;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 170px;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: -170px;
+  }
+  .contact .column-content .contact-img-bg-add1 {
+    position: relative;
+  }
+  .contact .column-content .contact-img-bg-add2{
+    left: -50px;
+  }
+}
+
+@media only screen and (min-width: 412px) {
+  .about .column-content h4 {
+    padding: 21rem 3rem 10px 3rem;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 258px 0 50px 0;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 190px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .about .column-content h4 {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 16rem 3rem 30px 3rem;
+  }
+  .about .column-content h5 {
+    font-size: 1rem;
+  }
+  .about .column-content p {
+    margin: 50px 50px;
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .about .personal-info .info-item a {
+    margin: 5px 0px 0 135px;
+  }
+  .my-skill .column-content {
+    padding: 10px 50px;
+  }
+  .services .column-content .service-content-item {
+    margin:  0 30px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 110px 0 50px 0;
+  }
+  .services .column-content .service-content-item h4 {
+    font-size: 1rem;
+  }
+  .services .column-content .service-content-item p {
+    font-size: 12px;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 120px;
+  }
+  .portfolio .column-content .portfolio-item img {
+    position: relative;
+    z-index: 100;
+  }
+  .contact .column-content .contact-img-bg-add1 {
+    position: absolute;
+    top:0;
+    left: -50px;
+    height: 150px;
+  }
+  .contact .column-content .contact-img-bg-add2{
+    position: absolute;
+    top:0px;
+    left: 0;
+    height: 150px;
+  }
+  .contact .column-content .contact-img-bg-add3{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 150px;
+  }
+  .page-switcher {
+    position: fixed;
+    top: 20px;
+    padding: 10px;
+    z-index: 101;
+  }
+  .page-switcher .home-switch {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about .column-content .about-img-bg1 {
+    bottom: 80px;
+    left: 5px;
+    height: 200px;
+    width: 350px;
+  }
+  .about .column-content h4 {
+    font-size: 2rem;
+    line-height: 45px;
+    padding: 21rem 3rem 30px 3rem;
+  }
+  .about .column-content h5 {
+    font-size: 1rem;
+  }
+  .about .column-content p {
+    margin: 50px 50px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  .about .personal-info .info-item a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .my-skill .column-content {
+    padding: 20px 50px;
+  }
+  .my-skill .column-content h4 {
+    font-size: 2rem;
+  }
+  .my-skill .column-content h5 {
+    font-size: 24px;
+  }
+  .services .column-content .service-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: unset ;
+    margin:  0 100px;
+  }
+  .services .column-content .service-img-bg {
+    bottom: 50px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 258px 0 50px 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .services .column-content .service-content-item h4 {
+    font-size: 1rem;
+  }
+  .services .column-content .service-content-item p {
+    font-size: 12px;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: 280px;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 190px;
+  }
+  .portfolio .column-content .portfolio-item img {
+    position: relative;
+    z-index: 100;
+  }
+  .column-content .column-content-form .contact-form {
+    min-width: 60%;
+    padding-top: 110px;
+  }
+  .column-content .column-content-form .contact-form .form-item .form-group .form-control {
+    min-width: 100%;
+  }
+  .column-content .column-content-form .contact-form .form-item .form-group textarea {
+    min-width: 100%;
+  }
+  .column-content .column-content-form .contact-form .form-item.send button {
+    margin: auto;
+  }
+  .page-switcher {
+    right: 10px;
+    top: 20px;
+    padding: 10 50px;
+  }
+  .page-switcher .home-switch {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .about .column-content .about-img-bg1 {
+    bottom: 100px;
+  }
+  .about .column-content h4 {
+    padding: 24rem 3rem 30px 3rem;
+  }
+  .about .column-content p {
+    font-size: 12px;
+  }
+  .services .column-content .service-content-item {
+    margin:  0 80px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 258px 0 50px 0;
+    font-size: 40px;
+  }
+  .services .column-content .service-content-item h4 {
+    font-size: 20px;
+  }
+  .services .column-content .service-content-item p {
+    font-size: 13px;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 220px;
+  }
+  .portfolio .column-content .portfolio-item img {
+    position: relative;
+    z-index: 100;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .my-skill .column-content .skill-img-bg {
+    display: none;
+  }
+  .portfolio .column-content .portfolio-image {
+    margin: 0 10%;
+  }
+  .portfolio .column-content .portfolio-image .portfolio-item {
+    flex: 0 40%;
+    margin: 0 auto;
+}
+  .portfolio .column-content h4 {
+    margin-top: 160px;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .column-content .about-img-bg1 {
+    bottom: -80px;
+    left: 50px;
+    height: 300px;
+    width: 500px;
+  }
+  .about .personal-info {
+    display: flex;
+    flex-wrap: wrap;
+     margin: 0;
+  }
+  .about .column-content h4 {
+    font-size: 2rem;
+    padding: 17rem 3rem 10px 3rem;
+  }
+  .about .column-content h5 {
+    font-size: 1rem;
+  }
+  .about .column-content p {
+    line-height: 16px;
+    font-size: 12px;
+  }
+  .about .column-content .job {
+    margin: 0 200px 0 0;
+  }
+  .my-skill .column-content .skills {
+    padding: 0 300px;
+  }
+  .my-skill .column-content .skill-img-bg-add1 {
+    left: 400px;
+  }
+  .my-skill .column-content .skill-img-bg-add2 {
+    right: 200px;
+    top: 500px;
+  }
+  .services .column-content .service-content-item {
+    margin:  0 200px;
+  }
+  .services .column-content .service-content-item h3 {
+    padding: 258px 0 50px 0;
+    font-size: 40px;
+  }
+  .services .column-content .service-content-item h4 {
+    font-size: 20px;
+  }
+  .services .column-content .service-content-item p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio .column-content h4 {
+    margin-top: 20px !important;
+  }
+}
+
+@media only screen and (max-height: 540px) {
+  .about .column-content h4 {
+    padding: 4rem 1rem 0rem 3rem !important;
+    line-height: 10px;
+  }
+  .about .column-content h5 {
+    position: relative;
+    z-index: 10 !important;
+  }
+  .about .column-content .about-img-bg1 {
+    bottom: 125px;
+  }
+  .my-skill .column-content {
+    padding: 30px 50px;
+  }
+  .my-skill .column-content .skills {
+    position: relative;
+    z-index: 10;
+    margin: 0px 50px !important;
+  }
+  .my-skill .column-content .skill-img-bg {
+    opacity: .3;
+  }
+  .portfolio .column-content h4 {
+    margin-top: 60px;
+  }
+  .portfolio .column-content .portfolio-image .portfolio-item {
+    padding: 10px;
+    flex: 0 25%;
+  }
+  .portfolio .column-content .portfolio-img-bg {
+    bottom: 0px;
+  }
+  .column-content .column-content-form .contact-form {
+    padding-top: 75px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .about .column-content h4 {
+    position:relative;
+    z-index: 10;
+    font-size: 14px;
+    padding: 12rem 3rem 10px 3rem;
+    line-height: 15px;
+  }
+  .about .column-content .about-img-bg1 {
+    height: 150px;
+    width: 300px;
+  }
+  .my-skill .column-content .skills {
+    margin-top: 0px;
+  }
+  .services .column-content {
+    padding: 0px 0px;
+    background: linear-gradient(#4dad7c, #a47d54 , #ac2d20);
+  }
+  .services .column-content .service-img-bg {
+    bottom: 45px;
+  }
+  .services .column-content .service-content-item h3 {
+    text-align: left;
+    padding: 100px 0 50px 0;
+  }
+  .services .column-content .service-content-item h4 {
+    font-size: 14px;
+  }
+  .services .column-content .service-content-item p {
+    font-size: 10px;
+  }
+  .portfolio .column-content .portfolio-image {
+    bottom: -80px;
+  }
+  .column-content .column-content-form {
+    padding-top: 0px;
+  }
+  .column-content .column-content-form .contact-form {
+    position: relative;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .about .column-content .about-img-bg1 {
+    left: 0;
+  }
+  .my-skill .column-content .skills {
+    margin-top: 100px;
+  }
+  .column-content .column-content-form .contact-form {
+    padding-top: 100;
+  }
+}
+/*==========Tools Ends===========*/
